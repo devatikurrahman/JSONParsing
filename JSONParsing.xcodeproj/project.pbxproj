@@ -13,6 +13,7 @@
 		6008908C2ADD938500914826 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6008908B2ADD938500914826 /* Preview Assets.xcassets */; };
 		60D716302ADE65B100D8D0D2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D7162F2ADE65B100D8D0D2 /* Person.swift */; };
 		60D716362ADEA79200D8D0D2 /* example1.json in Resources */ = {isa = PBXBuildFile; fileRef = 60D716352ADEA79200D8D0D2 /* example1.json */; };
+		60D716382ADEF34900D8D0D2 /* example2.json in Resources */ = {isa = PBXBuildFile; fileRef = 60D716372ADEF34900D8D0D2 /* example2.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		6008908B2ADD938500914826 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		60D7162F2ADE65B100D8D0D2 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		60D716352ADEA79200D8D0D2 /* example1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example1.json; sourceTree = "<group>"; };
+		60D716372ADEF34900D8D0D2 /* example2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example2.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				60D716352ADEA79200D8D0D2 /* example1.json */,
+				60D716372ADEF34900D8D0D2 /* example2.json */,
 			);
 			path = JSONData;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				60D716362ADEA79200D8D0D2 /* example1.json in Resources */,
 				6008908C2ADD938500914826 /* Preview Assets.xcassets in Resources */,
 				600890892ADD938500914826 /* Assets.xcassets in Resources */,
+				60D716382ADEF34900D8D0D2 /* example2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

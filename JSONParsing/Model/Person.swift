@@ -17,8 +17,9 @@ struct Person: Decodable {
 }
 
 extension Person {
-    static let allPerson: Person = Bundle.main.decodeJSON(file: "example1.json")
-    //static let samplePerson: Person = allPerson[0]
+    static let singlePerson: Person = Bundle.main.decodeJSON(file: "example1.json")
+    static let allPerson: [Person] = Bundle.main.decodeJSON(file: "example2.json")
+    static let samplePerson: Person = allPerson[0]
 }
 
 extension Bundle {
