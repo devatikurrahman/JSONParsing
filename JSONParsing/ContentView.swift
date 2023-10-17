@@ -7,13 +7,15 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    private var persons: Person = Person.allPerson
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            //ForEach(persons, id: \.name) { person in
+                Text("\(persons.name)")
+            //}
         }
         .padding()
     }
