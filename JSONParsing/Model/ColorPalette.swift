@@ -18,15 +18,15 @@ struct ColorPalette: Decodable {
     }
     let palette_name: String
     let palette_info: String
-    let paletteColors: [PaletterColor]
+    let palette_colors: [PaletterColor]
 }
 
 extension ColorPalette {
-    static let allFlatColors: [ColorPalette] = Bundle.main.decodeJSON(file: "FlatColors.json")
+    static let colorPalette: ColorPalette = getJSONData(file: "FlatColors.json")
 }
 
 extension ColorPalette {
-    var getJSONData: Decodable {
+    var getJSONData1: Decodable {
         guard let sourceURL = Bundle.main.url(forResource: "FlatColors", withExtension: "json") else {
             fatalError("Could not find Flat")
         }
@@ -44,7 +44,7 @@ extension ColorPalette {
         return loadedData
     }
     
-    func getJSONData<T: Decodable>(file: String) -> T {
+    static func getJSONData<T: Decodable>(file: String) -> T {
         guard let sourceURL = Bundle.main.url(forResource: "FlatColors", withExtension: "json") else {
             fatalError("Could not find \(file) in the project!")
         }
