@@ -13,7 +13,7 @@ struct Event: Decodable {
     let website: URL
 }
 
-extension Person {
+extension Event {
     static let allEvents: [Event] = Bundle.main.decodeJSON(file: "example4.json")
 }
 

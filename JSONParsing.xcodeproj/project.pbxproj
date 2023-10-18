@@ -13,6 +13,7 @@
 		6008908C2ADD938500914826 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6008908B2ADD938500914826 /* Preview Assets.xcassets */; };
 		609711D82ADFA41B00827F02 /* example4.json in Resources */ = {isa = PBXBuildFile; fileRef = 609711D72ADFA41B00827F02 /* example4.json */; };
 		609711DA2ADFA5E800827F02 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609711D92ADFA5E800827F02 /* Event.swift */; };
+		609711DC2ADFA7F100827F02 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609711DB2ADFA7F100827F02 /* EventView.swift */; };
 		60D716302ADE65B100D8D0D2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D7162F2ADE65B100D8D0D2 /* Person.swift */; };
 		60D716362ADEA79200D8D0D2 /* example1.json in Resources */ = {isa = PBXBuildFile; fileRef = 60D716352ADEA79200D8D0D2 /* example1.json */; };
 		60D716382ADEF34900D8D0D2 /* example2.json in Resources */ = {isa = PBXBuildFile; fileRef = 60D716372ADEF34900D8D0D2 /* example2.json */; };
@@ -28,6 +29,7 @@
 		6008908B2ADD938500914826 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		609711D72ADFA41B00827F02 /* example4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example4.json; sourceTree = "<group>"; };
 		609711D92ADFA5E800827F02 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		609711DB2ADFA7F100827F02 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		60D7162F2ADE65B100D8D0D2 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		60D716352ADEA79200D8D0D2 /* example1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example1.json; sourceTree = "<group>"; };
 		60D716372ADEF34900D8D0D2 /* example2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example2.json; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				60D7162E2ADE657000D8D0D2 /* Model */,
 				600890842ADD938200914826 /* JSONParsingApp.swift */,
 				600890862ADD938200914826 /* ContentView.swift */,
+				609711DB2ADFA7F100827F02 /* EventView.swift */,
 				600890882ADD938500914826 /* Assets.xcassets */,
 				6008908A2ADD938500914826 /* Preview Content */,
 			);
@@ -189,6 +192,7 @@
 				60D716302ADE65B100D8D0D2 /* Person.swift in Sources */,
 				60D7163C2ADEF62500D8D0D2 /* Family.swift in Sources */,
 				600890872ADD938200914826 /* ContentView.swift in Sources */,
+				609711DC2ADFA7F100827F02 /* EventView.swift in Sources */,
 				600890852ADD938200914826 /* JSONParsingApp.swift in Sources */,
 				609711DA2ADFA5E800827F02 /* Event.swift in Sources */,
 			);
