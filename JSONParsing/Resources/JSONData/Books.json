@@ -1,0 +1,28 @@
+[
+    {
+        "feed": {
+            "publisher": "Penguin",
+            "country": "ca"
+        },
+        "entry": [
+            {
+                "author": "Margaret Atwood",
+                "nationality": "Canadian"
+            },
+            {
+                "author": "Dan Brown",
+                "nationality": "American"
+            }
+        ]
+    },
+    {
+        "feed": {
+            "publisher": "Penguin",
+            "country": "ca"
+        },
+        "entry": {
+            "author": "Margaret Atwood",
+            "nationality": "Canadian"
+        }
+    }
+]

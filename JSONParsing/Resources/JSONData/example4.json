@@ -1,12 +1,20 @@
-[
-    {
-        "name": "Vancouver Event",
-        "date": 1582966800,
-        "website": "https://www.vancouverconventioncentre.com",
-    },
-    {
-        "name": "Los Angelas",
-        "date": 1588158000,
-        "website": "https://www.staplescenter.com",
-    }
-]
+{
+    "familyName": "Smith",
+    "members": [
+        {
+            "name": "James",
+            "age": 45,
+            "gender": "Male",
+            "sign": "Sagitarius",
+            "partner": "Emily",
+            "isEmployed": true
+        },
+        {
+            "name": "Mary",
+            "age": 45,
+            "gender": "Female",
+            "sign": "Taurus",
+            "isEmployed": false
+        }
+    ]
+}
