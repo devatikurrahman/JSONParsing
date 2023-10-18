@@ -11,10 +11,10 @@ struct ColorPaletteView: View {
     private let colorPalette: ColorPalette = ColorPalette.colorPalette
     
     var body: some View {
-        Text("\(colorPalette.palette_name)")
+        Text("\(colorPalette.paletteName)")
         List {
-            ForEach(colorPalette.palette_colors, id: \.sort_order) { color in
-                Text("\(color.sort_order)")
+            ForEach(colorPalette.paletteColors, id: \.sortOrder) { color in
+                Text("\(color.sortOrder)")
                 Text("\(color.description)")
                 Text("Color (red: \(color.red), green:\(color.green), blue:\(color.blue)")
             }

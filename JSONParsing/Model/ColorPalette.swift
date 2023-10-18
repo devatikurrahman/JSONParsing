@@ -9,16 +9,20 @@ import Foundation
 
 struct ColorPalette: Decodable {
     struct PaletterColor: Decodable {
-        let sort_order: Int
+        let sortOrder: Int
         let description: String
         let red: Int
         let green: Int
         let blue: Int
         let alpha: Double
     }
-    let palette_name: String
-    let palette_info: String
-    let palette_colors: [PaletterColor]
+    let paletteName: String
+    let paletteInfo: String
+    //let palette_colors: [PaletterColor]
+    
+    /* If we use camelCase instead of snake_case for a variable, then JSON parsing will fail due to mismatch of fields name, in this case we can use decoder keyDecodingStrategy (convertFromSnakeCase)
+     */
+    let paletteColors: [PaletterColor]
 }
 
 extension ColorPalette {
@@ -54,7 +58,7 @@ extension ColorPalette {
         }
         
         let decoder = JSONDecoder()
-        //decoder.keyDecodingStrategy = .convertFromSnakeCase
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
         guard let loadedData = try? decoder.decode(T.self, from: data) else {
             fatalError("Could not decode \(file)'s data in the project!")
         }
