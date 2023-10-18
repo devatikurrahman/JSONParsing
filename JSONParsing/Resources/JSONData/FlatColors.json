@@ -1,0 +1,46 @@
+{
+    "palette_name": "Flat Colors",
+    "palette_info": "For Design",
+    "palette_colors": [
+        {
+            "sort_order": 0,
+            "description": "Flat Powder Blue (Light)",
+            "red": 170,
+            "green": 186,
+            "blue": 241,
+            "alpha": 1.0
+        },
+        {
+            "sort_order": 1,
+            "description": "Flat Powder Blue (Dark)",
+            "red": 136,
+            "green": 152,
+            "blue": 207,
+            "alpha": 1.0
+        },
+        {
+            "sort_order": 2,
+            "description": "Flat Sky Blue (Light)",
+            "red": 49,
+            "green": 129,
+            "blue": 217,
+            "alpha": 1.0
+        },
+        {
+            "sort_order": 3,
+            "description": "Flat Sky Blue (Dark)",
+            "red": 39,
+            "green": 105,
+            "blue": 176,
+            "alpha": 1.0
+        },
+        {
+            "sort_order": 4,
+            "description": "Flat Blue (Light)",
+            "red": 150,
+            "green": 200,
+            "blue": 215,
+            "alpha": 1.0
+        }
+    ]
+}

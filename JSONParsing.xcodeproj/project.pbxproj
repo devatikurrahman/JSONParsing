@@ -14,6 +14,7 @@
 		609711D82ADFA41B00827F02 /* example4.json in Resources */ = {isa = PBXBuildFile; fileRef = 609711D72ADFA41B00827F02 /* example4.json */; };
 		609711DA2ADFA5E800827F02 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609711D92ADFA5E800827F02 /* Event.swift */; };
 		609711DC2ADFA7F100827F02 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609711DB2ADFA7F100827F02 /* EventView.swift */; };
+		609711DE2ADFE40900827F02 /* FlatColors.json in Resources */ = {isa = PBXBuildFile; fileRef = 609711DD2ADFE40900827F02 /* FlatColors.json */; };
 		60D716302ADE65B100D8D0D2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D7162F2ADE65B100D8D0D2 /* Person.swift */; };
 		60D716362ADEA79200D8D0D2 /* example1.json in Resources */ = {isa = PBXBuildFile; fileRef = 60D716352ADEA79200D8D0D2 /* example1.json */; };
 		60D716382ADEF34900D8D0D2 /* example2.json in Resources */ = {isa = PBXBuildFile; fileRef = 60D716372ADEF34900D8D0D2 /* example2.json */; };
@@ -30,6 +31,7 @@
 		609711D72ADFA41B00827F02 /* example4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example4.json; sourceTree = "<group>"; };
 		609711D92ADFA5E800827F02 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		609711DB2ADFA7F100827F02 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		609711DD2ADFE40900827F02 /* FlatColors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FlatColors.json; sourceTree = "<group>"; };
 		60D7162F2ADE65B100D8D0D2 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		60D716352ADEA79200D8D0D2 /* example1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example1.json; sourceTree = "<group>"; };
 		60D716372ADEF34900D8D0D2 /* example2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example2.json; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				60D716372ADEF34900D8D0D2 /* example2.json */,
 				60D716392ADEF5E100D8D0D2 /* example3.json */,
 				609711D72ADFA41B00827F02 /* example4.json */,
+				609711DD2ADFE40900827F02 /* FlatColors.json */,
 			);
 			path = JSONData;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			files = (
 				60D716362ADEA79200D8D0D2 /* example1.json in Resources */,
 				6008908C2ADD938500914826 /* Preview Assets.xcassets in Resources */,
+				609711DE2ADFE40900827F02 /* FlatColors.json in Resources */,
 				60D7163A2ADEF5E100D8D0D2 /* example3.json in Resources */,
 				609711D82ADFA41B00827F02 /* example4.json in Resources */,
 				600890892ADD938500914826 /* Assets.xcassets in Resources */,
