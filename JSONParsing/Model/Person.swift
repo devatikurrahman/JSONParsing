@@ -33,6 +33,15 @@ extension Bundle {
         }
         
         let decoder = JSONDecoder()
+        
+        // Custom date format
+        //let dateFormatter = DateFormatter()
+        //dateFormatter.dateFormat = "dd-MM-yyyy"
+        //decoder.dateDecodingStrategy = .formatted(dateFormatter)
+        
+        // Swift date format type
+        decoder.dateDecodingStrategy = .secondsSince1970
+        
         guard let loadedData = try? decoder.decode(T.self, from: data) else {
             fatalError("Could not decode \(file)'s data in the project!")
         }
