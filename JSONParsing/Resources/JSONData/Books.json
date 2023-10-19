@@ -17,12 +17,12 @@
     },
     {
         "feed": {
-            "publisher": "Penguin",
-            "country": "ca"
+            "publisher": "Allen and Unwin",
+            "country": "us"
         },
         "entry": {
-            "author": "Margaret Atwood",
-            "nationality": "Canadian"
+            "author": "Pierre Burton",
+            "nationality": "USA"
         }
     }
 ]

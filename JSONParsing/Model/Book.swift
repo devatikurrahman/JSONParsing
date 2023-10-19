@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Book: Decodable {
+struct Book: Decodable, Identifiable {
     enum CodingKeys: String, CodingKey {
         case feed, entry
     }
@@ -20,6 +20,7 @@ struct Book: Decodable {
         let nationality: String
     }
     
+    let id = UUID()
     let feed: Feed
     let entry: [Entry]
     
@@ -36,7 +37,15 @@ struct Book: Decodable {
 }
 
 extension Book {
-    static let allBooks: Book = getBookJSONData(file: "Books.json")
+    static let allBooks: [Book] = getBookJSONData(file: "Books")
+    static var showResult: String {
+        var tmpStr = ""
+        for book in allBooks {
+            //print(book.feed.publisher)
+            tmpStr += book.feed.publisher
+        }
+        return tmpStr
+    }
 }
 
 extension Book {
@@ -59,7 +68,7 @@ extension Book {
     }
     
     static func getBookJSONData<T: Decodable>(file: String) -> T {
-        guard let sourceURL = Bundle.main.url(forResource: "Books", withExtension: "json") else {
+        guard let sourceURL = Bundle.main.url(forResource: file, withExtension: "json") else {
             fatalError("Could not find \(file) in the project!")
         }
         
