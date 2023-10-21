@@ -7,7 +7,10 @@
 
 import Foundation
 
-struct Person: Decodable {
+// Use only Decodable protocol when need to decode JSON
+// Use only Encodable protocol when need to encode JSON
+// Use only Decodable & Encodable / Codable protocol when need to decode and encode
+struct Person: Codable {
     let name: String
     let age: Int
     let gender: String
@@ -20,6 +23,21 @@ extension Person {
     static let singlePerson: Person = Bundle.main.decodeJSON(file: "example1.json")
     static let allPerson: [Person] = Bundle.main.decodeJSON(file: "example2.json")
     static let samplePerson: Person = allPerson[0]
+}
+
+// Create an Person array for encoding
+var people = [
+    Person(name: "Robin", age: 30, gender: "Male", sign: "Sagittarius", partner: "Luna", isEmployed: false),
+    Person(name: "Emily", age: 35, gender: "Female", sign: "Sagittarius", partner: "John", isEmployed: true)
+]
+
+extension Person {
+    static func encodePersonObjToJSON() -> String {
+        let encoder = JSONEncoder()
+        let personJSONData = try! encoder.encode(people)
+        let encodedString = String(data: personJSONData, encoding: .utf8)!
+        return encodedString
+    }
 }
 
 extension Bundle {
@@ -49,3 +67,5 @@ extension Bundle {
         return loadedData
     }
 }
+
+
